@@ -1,0 +1,42 @@
+.typewriter h1 {
+    overflow: hidden;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 5px;
+    font-size: 32px; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation:
+      colorRotate 15.5s linear 0s infinite,
+      typing 15.5s,
+      blink-caret 15.5s step-end infinite;
+  }
+  
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  @keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
